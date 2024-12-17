@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- レスポンシブ表示の為の記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweets Delight</title>
+
+    <!-- 文字フォントの設定 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 検索に引っかからないように -->
+    <meta name="robots" content="noindex" />
+
+    <!-- サイトの概要 -->
+    <meta name="description" content="Sweets DelightのHPです！（練習用）" />
+
+    <!-- スタイルシート読み込み -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-title">
+          <img src="./img/logo.svg" alt="" />
+        </div>
+        <nav>
+          <ul class="header-nav">
+            <li><a href="#about">About</a></li>
+            <li>
+              <a class="header-menu" id="js-menu">Menu</a>
+              <ul class="menu-drawer js-menu-drawer">
+                <li><a href="#menu1">新発売</a></li>
+                <li><a href="#menu2">おすすめ</a></li>
+                <li><a href="#menu3">期間限定</a></li>
+              </ul>
+            </li>
+            <li><a href="#shop">Shop</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- トップへ戻るボタン（画面固定） -->
+    <div class="scroll-top js-scroll-top">TOP</div>
+
+    <!-- 画像クリック時の表示 -->
+    <div class="img-click js-img-click">
+      <img id="expansion" alt="" />
+    </div>
+
+    <div class="fv">
+      <picture>
+        <source srcset="./img/fv.png" media="(min-width: 768px)" />
+        <img src="./img/sp/fv.png" alt="" />
+      </picture>
+    </div>
+
+    <section class="about" id="about">
+      <div class="about-inner">
+        <div class="section-title">
+          <div class="section-title-main">About</div>
+          <div class="section-title-sub">ー 当店について ー</div>
+        </div>
+
+        <div class="about-contents">
+          <img class="about-img" src="./img/about.png" alt="" />
+          <div class="about-desc">
+            <p>
+              当店では、素材の持つ美味しさや風味を最大限に生かし、シンプルでありながらも、素材の良さを引き出すこだわりのスイーツを提供しています。
+            </p>
+            <br />
+            <p>
+              自然な味わいを大切にし、素材を感じさせるスイーツで、心に残るひとときをお過ごしください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="menu-inner">
+        <div class="section-title">
+          <div class="section-title-main">Menu</div>
+          <div class="section-title-sub">ー 今日のケーキ ー</div>
+        </div>
+        <ul class="menu-contents">
+          <li id="menu1">
+            <img class="menu-img js-menu-img" src="./img/menu1.png" alt="" />
+            <p class="menu-contents-main">ストロベリーケーキ</p>
+            <p class="menu-contents-sub">- Strawberry cake -</p>
+            <p class="menu-contents-desc"># 旬のあまおうトッピング</p>
+          </li>
+          <li id="menu2">
+            <img class="menu-img js-menu-img" src="./img/menu2.png" alt="" />
+            <p class="menu-contents-main">ブルーベリーチーズケーキ</p>
+            <p class="menu-contents-sub">- Blueberry cheesecake -</p>
+            <p class="menu-contents-desc"># フランス産チーズをブレンド</p>
+          </li>
+          <li id="menu3">
+            <img class="menu-img js-menu-img" src="./img/menu3.png" alt="" />
+            <p class="menu-contents-main">チョコレートケーキ</p>
+            <p class="menu-contents-sub">- Chocolate cake -</p>
+            <p class="menu-contents-desc"># ベルギー産チョコレート使用</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="shop-inner">
+        <div class="section-title">
+          <div class="section-title-main section-title-main-shop">Shop</div>
+          <div class="section-title-sub section-title-sub-shop">
+            ー ショップ情報 ー
+          </div>
+        </div>
+        <p class="shop-contents-text">
+          ただいま、オンラインストアを準備中です。
+          <br />
+          最新情報は以下より送信いただいた
+          <br />
+          メールアドレスへご案内いたします。
+        </p>
+        <form class="shop-mail-form">
+          <input
+            type="text"
+            class="shop-input"
+            placeholder="sample@sample.com"
+          />
+          <button type="submit" class="shop-button">SEND</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <img class="footer-img" src="./img/logo.svg" alt="" />
+        <div class="footer-text">ー 各SNS更新中 ー</div>
+        <ul class="footer-sns">
+          <li>
+            <a target="_blank" href="https://www.instagram.com/?hl=ja">
+              <img
+                class="footer-sns-img"
+                src="./img/icon-instagram.png"
+                alt=""
+              />
+              <div class="footer-sns-text">メニューご案内</div></a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/">
+              <img class="footer-sns-img" src="./img/icon-youtube.png" alt="" />
+              <div class="footer-sns-text">制作のウラガワ</div></a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://x.com/home">
+              <img class="footer-sns-img" src="./img/icon-twitter.png" alt="" />
+              <div class="footer-sns-text">お店の混雑状況</div></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <small class="copyright-text">&copy;2023 Sweet Delight.</small>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
